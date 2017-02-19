@@ -1,0 +1,1 @@
+var a=function(){console.log("areesss")};a();var b=function(){console.log("b3333")};b();

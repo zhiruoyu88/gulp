@@ -1,0 +1,142 @@
+/*注释*/
+* {
+	padding:0;
+	margin: 0;
+}
+html,body {
+	background-color:#fff;
+	font-family: PingFang SC Medium,microsoft yahei,arial,verdana,helvetica,sans-serif;
+	font-size: 125%;
+}
+ul,li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+header {
+	height:40px;
+	line-height: 40px;
+	color:#fff;
+	background-color: #f60;
+	text-align: center;
+	text-indent: -20px;
+	font-size: 0.7rem;
+}
+.goback {
+	float: left;
+	width: 40px;
+	height:40px;
+}
+.goback i.big {
+	position: absolute;
+	top:9px;
+	left:10px;
+	display: inline-block;
+	width:0;
+	height:0;
+	border-style:solid;
+	border-width: 10px 10px 10px 0px;
+	border-color:transparent #fff transparent transparent;
+}
+.goback i.small {
+	position: absolute;
+	top:11px;
+	left:12px;
+	display: inline-block;
+	width:0;
+	height:0;
+	border-style:solid;
+	border-width: 8px 8px 8px 0px;
+	border-color:transparent #f60 transparent transparent;
+}
+header .more_btn {
+    width: 1.45rem;
+    height: 28px;
+    position: absolute;
+    right: 4.444%;
+    margin-top: 5px;
+}
+.line {
+	width: 70%;
+    height: 1px;
+    background-color: #fff;
+    margin: 7px auto;
+}
+.formlist {
+	padding:10px;
+}
+.formlist li {
+	font-size: 0.6rem;
+	color:#999;
+	margin:16px 0;
+	line-height: 30px;
+}
+.formlist li>div {
+	width: 294px;	
+	margin:0 auto;
+}
+.formlist li div div {
+	float:left;
+}
+.formlist li div s {
+	text-decoration: none;
+    color: #ff0000;
+    padding:0 2px;
+}
+.formlist input {
+	width: 200px;
+    height: 28px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+    padding-left:10px;
+}
+.btn {
+	display: block;
+	font-size: 0.7rem;
+	width:80%;
+	margin:0 auto;
+	height:34px;
+	line-height:34px;
+	background-color: #f60;
+	color:#fff;
+	text-align: center;
+	border-radius: 3px;
+}
+.login-wp {
+    display: none;
+    position: absolute;
+    width: 80px;
+    z-index: 102;
+    border-radius: 3px;
+    top: 38px;
+    right: 0px;
+    background-color: rgba(0,0,0,.5);
+}
+.login-tri {
+    position: absolute;
+    top: -6px;
+    right: 9px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 6px 6px 6px;
+    border-color: transparent transparent rgba(0,0,0,.5) transparent;
+}
+.login-wp li {
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+}
+.login-wp a {
+    display: block;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 0 4px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-indent: 0;
+    font-size: 14px;
+}

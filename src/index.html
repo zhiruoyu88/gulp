@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>发布采购单</title>
+	<link rel="stylesheet" href="css/test0.css">
+	<script>
+		(function(doc,win){var docEl=doc.documentElement,resizeEvt='orientationchange'in window?'orientationchange':'resize',recalc=function(){var clientWidth=docEl.clientWidth;if(clientWidth>=375){docEl.style.fontSize=20*(375/320)+'px';return;}if(!clientWidth)return;docEl.style.fontSize=20*(clientWidth/320)+'px'};if(!doc.addEventListener)return;win.addEventListener(resizeEvt,recalc,false);doc.addEventListener('DOMContentLoaded',recalc,false)})(document,window);
+	</script>
+</head>
+<body>
+	<div class="box">
+		<header>
+			<a class="goback" href="javascript:history.go(-1)"><i class="big"></i><i class="small"></i></a>
+			<span>发布采购单</span>
+			<span id="more" class="more_btn">
+				<div class="line"></div><div class="line"></div><div class="line"></div>
+				<ul class="login-wp">
+					<i class="login-tri"></i>
+					<li><a href="">登录</a></li>
+					<li><a href="">注册</a></li>						
+					<!-- <li><a href="">退出</a></li> -->
+				</ul>
+			</span>
+		</header>
+		<ul class="formlist">
+			<li>
+				<div>
+					<div><s>*</s>我要采购：</div>
+					<input placeholder="请输入采购产品名称" type="text">
+				</div>
+			</li>
+			<li>
+				<div>
+					<div><s>*</s>采购数量：</div>
+					<input placeholder="请输入您的采购数量" type="text">
+				</div>
+			</li>
+			<li>
+				<div>
+					<div><s>*</s>我的电话：</div>
+					<input placeholder="请输入您的联系电话" type="text">
+				</div>
+			</li>
+		</ul>
+		<a class="btn" href="javascript:;">确认提交</a>
+	</div>
+	<script>
+	var getE = function(id){
+		return document.getElementById(id);
+	},
+	flag,
+	inputs = document.getElementsByTagName('input');
+	getE('more').onclick = function(){
+		if(flag){
+			this.getElementsByTagName('ul')[0].style.display='none';
+			flag =0;
+		}else {
+			this.getElementsByTagName('ul')[0].style.display='block';
+			flag=1;
+		}
+	}
+	for(var i =0 ;i<inputs.length;i++){
+			inputs[i].onfocus = function(){
+				getE('more').getElementsByTagName('ul')[0].style.display='none';
+				flag =0;
+			}
+		}
+	</script>
+</body>
+</html>
